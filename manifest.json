@@ -14,12 +14,11 @@
     "background": {
         "scripts": ["background.js"]
     },
-    "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js; object-src 'self'",
     "description": "Select the text and receive a message whether the selected text's connotation is positive or negative",
     "browser_action": {
         "default_icon": "positive-negative.png",
         "default_popup": "popup.html",
-        "default_title": "Display connotation of text"
+        "default_title": "Display sentiment analysis of text"
 
     }
     
