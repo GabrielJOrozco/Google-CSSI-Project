@@ -6,12 +6,32 @@
 	<title></title>
 </head>
 <body>
-    <h1>Positive / Negative</h1>
-    <!-- Rounded switch -->
-    <label class="switch">
-        <input id="toggleSwitch" type="checkbox">
-        <span class="slider round"></span>
-    </label>
+    <h1>
+        posineg
+        <img src="images/for-chrome.png" alt="for chrome">
+    </h1>
+
+    <hr>
+
+    
+    <div class="textToggleCombo">
+        <span>Sentiment Analysis</span>
+        <!-- Rounded switch -->
+        <label class="switch">
+            <input id="toggleSentiment" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div class="textToggleCombo">
+        <span>Text Summarization</span>
+        <!-- Rounded switch -->
+        <label class="switch">
+            <input id="toggleText" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
     <br>
     <p id="sentiment"></p>
     <script src="popup.js"></script>

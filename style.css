@@ -3,7 +3,7 @@
     position: relative;
     display: inline-block;
     width: 60px;
-    height: 34px;
+    height: 32px;
   }
   
 /* Hide default HTML checkbox */
@@ -29,8 +29,8 @@
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 24px;
+    width: 24px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -68,3 +68,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font: normal 18px Arial, Helvetica, sans-serif; 
  }
+
+.textToggleCombo {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom:6px;
+}

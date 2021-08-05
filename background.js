@@ -3,8 +3,9 @@ console.log("Background Running");
 chrome.runtime.onMessage.addListener(receiver);
 
 var sentiment;
+var buttonState;
 
-window.text = ""
+window.text = "";
     
 function receiver(request, sender, sendResponse) {
     text = request.text;
