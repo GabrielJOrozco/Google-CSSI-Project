@@ -1,15 +1,14 @@
 {
 "update_url": "https://clients2.google.com/service/update2/crx", 
     "manifest_version": 2,
-    "name": "Posineg",
+    "name": "Pos-i-neg",
     "version": "0.0.1",
     "content_scripts": [
         {
             "matches": [
                 "<all_urls>"
             ],
-            "js": ["script.js"],
-            "css": ["highlight.css"]
+            "js": ["script.js"]
         }
     ],
     "background": {
@@ -17,11 +16,14 @@
     },
     "description": "Select the text and receive a message whether the selected text's connotation is positive or negative",
     "browser_action": {
-        "default_icon": "images/positive-negative.png",
+        "default_icon": "images/logo-transparent.png",
         "default_popup": "popup.html",
         "default_title": "Display sentiment analysis of text"
 
-    }
+    },
+    "permissions": ["storage"]
+
+
     
     
 }

@@ -5,15 +5,17 @@
     <link rel="stylesheet" href="style.css">
 	<title></title>
 </head>
-<body>
-    <h1>
-        posineg
+<body> 
+    <div class="header"> 
+        <img src="images/logo-transparent.png" 
+        width="35" 
+        height="35" />
+        <span>
+            <b>pos-i-neg</b>
+        </span>
         <img src="images/for-chrome.png" alt="for chrome">
-    </h1>
-
+    </div>
     <hr>
-
-    
     <div class="textToggleCombo">
         <span>Sentiment Analysis</span>
         <!-- Rounded switch -->
@@ -22,18 +24,21 @@
             <span class="slider round"></span>
         </label>
     </div>
-
-    <div class="textToggleCombo">
-        <span>Text Summarization</span>
-        <!-- Rounded switch -->
-        <label class="switch">
-            <input id="toggleText" type="checkbox">
-            <span class="slider round"></span>
-        </label>
-    </div>
-
+    <hr>
+    <div>
+        <b> Results:  </b> 
+    </div> 
     <br>
-    <p id="sentiment"></p>
+    <div>
+        Sentiment:
+        <b>
+            <span id="sentiment"></span>
+        </b> 
+    </div>
+    <div>
+        Score: 
+        <span id="score"></span>
+    </div>
     <script src="popup.js"></script>
     
 </body>

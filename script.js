@@ -1,6 +1,7 @@
-console.log("Chrome Extension Go")
 
 window.addEventListener('mouseup', textSelected);
+
+
 function textSelected() {
     let selectedText = window.getSelection().toString().trim();
     if (selectedText.length > 0) {
@@ -11,3 +12,4 @@ function textSelected() {
         chrome.runtime.sendMessage(message);
     }
 }
+
